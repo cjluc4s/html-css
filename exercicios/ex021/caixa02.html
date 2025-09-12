@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        article{
+            background-color: lightgray;
+            border-radius: 5px;
+        }
+        article > aside{
+            background-color: rgb(160, 160, 160);
+        }
+        nav{
+            background-color: rgb(184, 184, 184);
+            padding: 3px;
+            box-shadow: 1px 1px 5px black;
+            border-radius: 6px;
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+            <h2>Notícia sobre o Brasil</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur nihil blanditiis sit corrupti id facilis sunt quo! Fugiat facilis vero impedit, sed hic doloribus nemo dolor doloremque quo, harum velit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aperiam voluptatem reiciendis, odit dolore, necessitatibus ipsam rem ex dolor voluptate quas maiores. Obcaecati beatae accusantium pariatur quisquam, deserunt ratione et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corrupti corporis quibusdam voluptates, culpa modi ratione, ea explicabo minus quos, fuga distinctio numquam voluptate ipsam vitae voluptatem recusandae delectus nostrum. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, dignissimos fugiat veritatis hic repellat, exercitationem laudantium eveniet, sapiente nobis quisquam ipsum. Distinctio repellendus nihil odio soluta quaerat nobis eum magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero blanditiis fugit excepturi, fugiat, hic exercitationem ut aut recusandae, quaerat dolorem optio provident quia! Distinctio iure animi ea, suscipit earum dicta!</p>
+                <aside>
+                    <p>Artigo escrito por Calvin Smith</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Lucas.</p>
+    </footer>
+</body>
+</html>

@@ -12,6 +12,7 @@
 
         table {
             width: 400px;
+            height: 250px;
             border-collapse: collapse;
         }
 
@@ -26,11 +27,19 @@
         td {
             border: 1px solid black;
             padding: 8px;
+            text-align: center;
+            vertical-align: top;
         }
 
         td.linha {
             background-color: aliceblue;
+            text-align: left;
         }
+
+        .numero {
+            text-align: right;
+        }
+
     </style>
 </head>
 <body>
@@ -84,26 +93,26 @@
         </tr>
 
         <tr>
-            <td>A2</td>
+            <td class="numero">A2</td>
             <td class="linha">B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
 
         <tr>
             <td class="linha">A3</td>
-            <td>B3</td>
+            <td class="numero">B3</td>
             <td class="linha">C3</td>
         </tr>
 
         <tr>
-            <td>A4</td>
+            <td class="numero">A4</td>
             <td class="linha">B4</td>
-            <td>C4</td>
+            <td class="numero">C4</td>
         </tr>
 
         <tr>
             <td class="linha">A5</td>
-            <td>B5</td>
+            <td class="numero">B5</td>
             <td class="linha">C5</td>
         </tr>
     </table>

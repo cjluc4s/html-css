@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        td.foot {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela</h1>
+
+    <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Oliveira</td>
+                <td>Gladiador</td>
+                <td>Matrix</td>
+                <td>Titanic</td>
+            </tr>
+
+            <tr>
+                <td>Beatriz Fernandes</td>
+                <td>Vingadores: Ultimato</td>
+                <td>O Rei Leão</td>
+                <td>A Origem</td>
+            </tr>
+
+            <tr>
+                <td>Camila Souza</td>
+                <td>Forrest Gump</td>
+                <td>Clube da Luta</td>
+                <td>Interestelar</td>
+            </tr>
+
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Lucas Carvalho</td>
+                <td>Guardiões da Galáxia</td>
+                <td>Kill Bill</td>
+                <td>Os Incríveis</td>
+            </tr>
+
+            <tr>
+                <td>Rafael Gomes</td>
+                <td>Procurando Nemo</td>
+                <td>Jurassic Park</td>
+                <td>Toy Story 4</td>
+            </tr>
+
+            <tr>
+                <td>João Martins</td>
+                <td>O Pianista</td>
+                <td>Coração Valente</td>
+                <td>Coringa</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="4">Total de Filmes</th>
+                <td class="foot">12</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
